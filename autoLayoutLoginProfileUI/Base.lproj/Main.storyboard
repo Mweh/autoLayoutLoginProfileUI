@@ -141,21 +141,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wbC-qL-ks8"/>
+                    <connections>
+                        <outlet property="userName" destination="Lat-Zv-SKc" id="YMt-QX-e6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953.02325581395348" y="-3.218884120171674"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="mZM-hT-SEp">
             <objects>
-                <viewController id="dFO-f2-wO9" sceneMemberID="viewController">
+                <viewController title="ProfileViewController" id="dFO-f2-wO9" userLabel="Profile View Controller" customClass="ProfileViewController" customModule="autoLayoutLoginProfileUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5dA-jH-rpm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GJz-Hd-XqH">
-                                <rect key="frame" x="0.0" y="103" width="430" height="795"/>
+                                <rect key="frame" x="0.0" y="103" width="430" height="625"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mOJ-lO-brn">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="250"/>
@@ -165,10 +168,10 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-5g-coX">
-                                        <rect key="frame" x="0.0" y="250" width="430" height="545"/>
+                                        <rect key="frame" x="0.0" y="250" width="430" height="375"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MZX-mw-kCl">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="545"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="375"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pnE-i7-M8p">
                                                         <rect key="frame" x="0.0" y="1" width="150" height="148.66666666666666"/>
@@ -198,7 +201,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrD-i5-ZyS">
-                                                        <rect key="frame" x="0.0" y="300" width="150" height="245"/>
+                                                        <rect key="frame" x="0.0" y="300" width="150" height="75"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.7607843876" green="0.21960783" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
@@ -217,7 +220,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c73-YR-nV5">
-                                                <rect key="frame" x="150" y="0.0" width="280" height="545"/>
+                                                <rect key="frame" x="150" y="0.0" width="280" height="375"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Llewellyngot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-Wt-Jfg">
                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
@@ -323,24 +326,24 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YQa-8N-Odf">
-                                                        <rect key="frame" x="0.0" y="300" width="280" height="245"/>
+                                                        <rect key="frame" x="0.0" y="300" width="280" height="75"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nJP-B7-nTs">
-                                                                <rect key="frame" x="0.0" y="1" width="93.333333333333329" height="243.66666666666666"/>
+                                                                <rect key="frame" x="0.0" y="1" width="93.333333333333329" height="73.666666666666671"/>
                                                                 <color key="tintColor" red="0.7607843876" green="0.21960783" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="75" id="72l-hm-nQJ"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PLf-Fv-tgB">
-                                                                <rect key="frame" x="93.333333333333343" y="1" width="93.333333333333343" height="243.66666666666666"/>
+                                                                <rect key="frame" x="93.333333333333343" y="1" width="93.333333333333343" height="73.666666666666671"/>
                                                                 <color key="tintColor" red="0.7607843876" green="0.21960783" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="75" id="968-gk-3d3"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FmJ-LB-3sh">
-                                                                <rect key="frame" x="186.66666666666669" y="1" width="93.333333333333314" height="243.66666666666666"/>
+                                                                <rect key="frame" x="186.66666666666669" y="1" width="93.333333333333314" height="73.666666666666671"/>
                                                                 <color key="tintColor" red="0.7607843876" green="0.21960783" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="75" id="3Ws-Qm-VXi"/>
@@ -387,6 +390,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mon-V3-neq"/>
+                    <connections>
+                        <outlet property="profileName" destination="AMD-Wt-Jfg" id="HlZ-zu-7a5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTm-ZI-i3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

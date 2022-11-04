@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD395FEB29159FD4009D383D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD395FEA29159FD4009D383D /* ProfileViewController.swift */; };
 		CDEB098A29134C7700DE4878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB098929134C7700DE4878 /* AppDelegate.swift */; };
 		CDEB098C29134C7700DE4878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB098B29134C7700DE4878 /* SceneDelegate.swift */; };
 		CDEB098E29134C7700DE4878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB098D29134C7700DE4878 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD395FEA29159FD4009D383D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CDEB098629134C7700DE4878 /* autoLayoutLoginProfileUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoLayoutLoginProfileUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEB098929134C7700DE4878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEB098B29134C7700DE4878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CDEB098929134C7700DE4878 /* AppDelegate.swift */,
 				CDEB098B29134C7700DE4878 /* SceneDelegate.swift */,
 				CDEB098D29134C7700DE4878 /* ViewController.swift */,
+				CD395FEA29159FD4009D383D /* ProfileViewController.swift */,
 				CDEB098F29134C7700DE4878 /* Main.storyboard */,
 				CDEB099229134C7900DE4878 /* Assets.xcassets */,
 				CDEB099429134C7900DE4878 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				CDEB098E29134C7700DE4878 /* ViewController.swift in Sources */,
 				CDEB098A29134C7700DE4878 /* AppDelegate.swift in Sources */,
+				CD395FEB29159FD4009D383D /* ProfileViewController.swift in Sources */,
 				CDEB098C29134C7700DE4878 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
